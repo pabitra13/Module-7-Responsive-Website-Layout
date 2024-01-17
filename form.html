@@ -15,11 +15,24 @@
             text-decoration: none;
             color: black;
         }
-        .Login-form{
+
+        .container{
+            display: flex;
+            justify-content: center;
+            /* border: 1px solid green; */
+            align-items: center;
+            height: 90vh;
+        }
+
+        .Login-form {
             display: flex;
             flex-direction: column;
+            width: 50%;
+            justify-content: center;
+            /* border: 5px solid tomato; */
         }
-        .Login-form input{
+
+        .Login-form input {
             margin: 20px;
         }
     </style>
@@ -36,12 +49,14 @@
         <a href="">Login</a>
     </nav>
 
-    <form class="Login-form">
-        <h3>Please Login</h3>
-        <input type="email" name="" id="" placeholder="Your Email">
-        <input type="password" name="" id="" placeholder="Your Password">
-        <input type="submit" value="Login">
-    </form>
+    <section class="container">
+        <form class="Login-form">
+            <h3>Please Login</h3>
+            <input type="email" name="" id="" placeholder="Your Email" required>
+            <input type="password" name="" id="" placeholder="Your Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </section>
 </body>
 
 </html>
